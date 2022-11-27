@@ -1,0 +1,47 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{summarypackage}[2014/08/21 Example package]
+
+%some quick commands for common symbols
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\p}{\partial}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\tr}{\text{tr}}
+\newcommand{\rank}{\text{rank}}
+
+%some quantum symbols
+\newcommand{\bra}[1]{\langle#1|} \newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\ketbra}[2]{|#1\rangle\!\langle#2|}
+\newcommand{\braket}[2]{\langle#1|#2\rangle} \newcommand{\proj}[1]{|
+#1\rangle\!\langle #1 |} \newcommand{\avg}[1]{\langle#1\rangle}
+
+%math environments
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+%note boxes
+\usepackage{tcolorbox}
+\newtcolorbox{myredbox}[1]{colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries,title=#1}
+
+\newtcolorbox{mybluebox}[1]{colback=red!5!white,colframe=blue!75!black,fonttitle=\bfseries,title=#1}
+
+%todo notes
+\usepackage[colorinlistoftodos]{todonotes}
